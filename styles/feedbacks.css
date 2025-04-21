@@ -74,6 +74,8 @@
   }
   .wrapper-feedbacks {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 32px;
+
   }
 
   .card-feedback{
@@ -89,6 +91,7 @@
   }
   .wrapper-feedbacks {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 32px;
   }
 
   .card-feedback{

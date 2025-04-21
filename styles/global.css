@@ -47,9 +47,14 @@ body{
 #content{
   max-width: 100%;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.content-main{
+main{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,6 +193,15 @@ body{
   line-height: 150%; 
 }
 
+.text-info-event{
+  color: var(--text-color-04);
+  font-family: var(--ff-03);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: -0.24px;
+}
+
 #modal-title{
   color: var(--text-color-01);
   font-family: var(--ff-01);
@@ -236,7 +250,7 @@ body{
   font-family: var(--ff-03);
   font-size: 14px;
   font-weight: 300;
-  line-height: 125%;
+  line-height: 150%;
   max-width: 810px;
 }
 
@@ -356,6 +370,10 @@ body{
     font-size: 18px;
   }
 
+  .text-info-event{
+    font-size: 18px;
+  }
+
   .text-info-services{
     font-size: 18px;
   }
@@ -397,7 +415,9 @@ body{
 }
 
 @media (min-width: 1001px) {
-
+  .text-logo{
+    font-size: 38px;
+  }
   
   /* variable */
   .text-hero-title{

@@ -2,6 +2,8 @@
 #contact {
   padding: 72px;
   background-color: var(--bg-02);
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -22,7 +24,7 @@
 
 .modern-contact-image img {
   border-radius: 16px;
-  max-width: 100%;
+  max-width: 350px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 

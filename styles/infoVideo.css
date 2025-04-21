@@ -27,6 +27,8 @@
 
   padding: 56px 24px;
   color: var(--text-color-03);
+  align-items: center;
+  justify-content: center;
 }
 
 /* Tablet */
@@ -50,16 +52,23 @@
 }
 
 /* Desktop */
-@media (min-width: 1025px) {
+@media (min-width: 1000px) {
   #content-info-video {
     padding: 100px 80px;
     text-align: center;
     max-width: 100%;
     margin: auto;
+    height: 100%;
   }
+
+  #info-video{
+    height: 600px;
+  }
+
 
   #content-info-video h1 {
     font-size: 36px;
+    width: 900px
   }
 
   .text-info-video {

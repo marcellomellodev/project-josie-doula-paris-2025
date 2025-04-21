@@ -64,6 +64,7 @@ header{
 
 @media (min-width: 1024px) {
   header{
+    width: 1280px;
     padding: 24px 48px;
   }
 

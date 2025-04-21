@@ -2,6 +2,7 @@
   padding: 0 24px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .info-services{
@@ -31,6 +32,9 @@
   background: var(--bg-02);
   border-radius: 16px;
   padding: 24px;
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
 
 }
 #services{
@@ -49,6 +53,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  padding: 32px;
 }
 
 .wrapper-card-service{
@@ -102,6 +107,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .info-services{
+    padding: 0 24px;
+  }
+
   .wrapper-services{  
     gap: 32px;
   }
@@ -137,7 +146,7 @@
   }
 
   .content-info-services{
-    width: 100%;
+    width: 80%;
     padding: 64px 48px;
   }
   .modern-contact-image{
