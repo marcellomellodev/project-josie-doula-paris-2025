@@ -1,0 +1,239 @@
+  <!DOCTYPE html>
+  <html lang="fr-fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | Josie Doula em Paris</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/service.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <div class="Wrapper-logo">
+        <div class="img-logo">
+          <img src="./assets/header/logo-josie.svg" alt="logo Josie Doula em Paris" class="logo-img">
+        </div>
+        <h1 class="text-logo">Josie Doula</h1>
+      </div>
+      <div class="menu-header">
+        <nav class="menu">
+          <ul class="menu-header-list">
+            <li class="text-menu-list-header"><a href="index.html#about">Sobre</a></li>
+            <li class="text-menu-list-header"><a href="index.html#events">Eventos</a></li>
+            <li class="text-menu-list-header"><a href="./service.html" class="btn">Serviços</a></li>
+            <li class="text-menu-list-header"><a href="index.html#contact">Contato</a></li>
+          </ul>
+          
+          </ul>
+        </nav>
+      </div>
+      <div class="social-media-header">
+        <a href="https://www.instagram.com/josiedoulaemparis/" target="_blank" class="social-media-icon">
+          <img src="./assets/header/instagram-icon.svg" alt="icone Instagram" >
+        </a>
+        <button id="btn-language" onclick="trocarIdioma()" class="btn-language">
+          <img
+            src="https://flagcdn.com/16x12/fr.png"
+            srcset="https://flagcdn.com/32x24/fr.png 2x,
+              https://flagcdn.com/48x36/fr.png 3x"
+            width="16"
+            height="12"
+            alt="France">
+          <!-- O texto será preenchido via JavaScript -->
+        </button>
+      
+
+        <!-- <div class="language-switch">
+          
+        </div>
+        -->
+        
+      </div>
+    </header>
+
+    <section class="services-hero">
+      <h1>Serviços que acolhem cada etapa da sua maternidade</h1>
+      <p>Apoio personalizado do pré-natal ao pós-parto, com carinho e profissionalismo.</p>
+    </section>
+
+    <main class="services-container">
+      <div class="accordion-grid">
+        <!-- Card 1 -->
+        <div class="accordion-item">
+          <img src="./assets/services/service1.png" alt="Educação Perinatal" class="service-img">
+          <h3 class="service-title">Educação Perinatal</h3>
+          <button class="accordion-toggle">Mais informações <span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Preparação completa para o parto com informações práticas e emocionais.</p>
+            <ul>
+              <li>Técnicas de respiração</li>
+              <li>Plano de parto consciente</li>
+              <li>Redução de medos e ansiedades</li>
+            </ul>
+            <a href="#contact" class="btn-agendar">Agende o Serviço</a>
+          </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="accordion-item">
+          <img src="./assets/services/service1.png" alt="Acompanhamento no Parto" class="service-img">
+          <h3 class="service-title">Acompanhamento no Parto</h3>
+          <button class="accordion-toggle">Mais informações <span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Presença contínua com suporte físico e emocional no momento do parto.</p>
+            <ul>
+              <li>Massagens e alívio da dor</li>
+              <li>Ambiente seguro e acolhedor</li>
+              <li>Empoderamento feminino</li>
+            </ul>
+            <a href="#contact" class="btn-agendar">Agende o Serviço</a>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="accordion-item">
+          <img src="./assets/services/service1.png" alt="Pós-parto e Amamentação" class="service-img">
+          <h3 class="service-title">Pós-parto e Amamentação</h3>
+          <button class="accordion-toggle">Mais informações <span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Suporte essencial nos primeiros dias com o bebê e orientações sobre amamentação.</p>
+            <ul>
+              <li>Consultoria personalizada</li>
+              <li>Apoio emocional</li>
+              <li>Facilitação da amamentação</li>
+            </ul>
+            <a href="#contact" class="btn-agendar">Agende o Serviço</a>
+          </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="accordion-item">
+          <img src="./assets/services/service1.png" alt="Doce Noite" class="service-img">
+          <h3 class="service-title">Doce Noite</h3>
+          <button class="accordion-toggle">Mais informações <span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Cuidado noturno para que você possa descansar enquanto o bebê é assistido com carinho.</p>
+            <ul>
+              <li>Monitoramento noturno</li>
+              <li>Auxílio nas mamadas</li>
+              <li>Tranquilidade para a família</li>
+            </ul>
+            <a href="#contact" class="btn-agendar">Agende o Serviço</a>
+          </div>
+        </div>
+    
+        <!-- Card 5 -->
+        <div class="accordion-item">
+          <img src="./assets/services/service1.png" alt="Chá de Bençãos" class="service-img">
+          <h3 class="service-title">Chá de Bençãos</h3>
+          <button class="accordion-toggle">Mais informações <span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Celebração especial de conexão, força e amor para a gestante.</p>
+            <ul>
+              <li>Rituais simbólicos</li>
+              <li>Mensagens positivas</li>
+              <li>Preparação emocional</li>
+            </ul>
+            <a href="#contact" class="btn-agendar">Agende o Serviço</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+
+    <footer id="footer">
+      <div class="content-footer">
+        <div class="footer-logo">
+          <img src="./assets/footer/assinatura-josie.svg" alt="logo Josie Doula em Paris" class="logo-img">
+        </div>
+        
+        <div class="wrapper-social-footer">
+          <div class="social-footer">
+            <img src="./assets/footer/Instagram-icon.svg" alt="icone Instagram" class="social-media-icon">
+            <a href="https://www.instagram.com/josiedoulaemparis/" target="_blank" class="text-link-footer" >@josiedoulaemparis</a>
+          </div>
+      
+          <div class="social-footer">
+            <img src="./assets/footer/Whatsapp-icon.svg" alt="icone WhatsApp" class="social-media-icon">
+            <a href="https://wa.me/+330750330047" target="_blank" class="text-link-footer">+33 07.50.33.00.47</a>
+          </div>
+      
+          <div class="social-footer">
+            <img src="./assets/footer/email.svg" alt="icone Email" class="social-media-icon">
+            <a href="mailto:josie.doula.paris@gmail.com" target="_blank" class="text-link-footer">josie.doula.paris@gmail.com</a>
+          </div>
+      
+          <div class="company-id">
+            <p>SIRET:  94751513600010</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <p class="text-copyright">© 2025 Todos os direitos reservados.</p>
+      <span class="dev-site">Desenvolvido por <a href="https://www.dilevate.com">Dilevate</a></span>
+    </div>
+  
+
+    <script>
+      function trocarIdioma() {
+        const currentPage = window.location.pathname;
+
+        if (currentPage.includes('service_fr.html')) {
+        window.location.href = 'service.html';  // Voltar para Português
+        } else {
+        window.location.href = 'service_fr.html';  // Ir para Francês
+        }
+      }
+
+      const accordions = document.querySelectorAll('.accordion-header');
+
+      accordions.forEach(header => {
+        header.addEventListener('click', () => {
+          const item = header.parentElement;
+          const body = item.querySelector('.accordion-body');
+          const icon = header.querySelector('.icon');
+
+          if(item.classList.contains('active')) {
+            item.classList.remove('active');
+            body.style.maxHeight = null;
+            icon.textContent = '+';
+          } else {
+            document.querySelectorAll('.accordion-item').forEach(i => {
+              i.classList.remove('active');
+              i.querySelector('.accordion-body').style.maxHeight = null;
+              i.querySelector('.icon').textContent = '+';
+            });
+            item.classList.add('active');
+            body.style.maxHeight = body.scrollHeight + 'px';
+            icon.textContent = '-';
+          }
+        });
+      });
+
+      const toggles = document.querySelectorAll('.accordion-toggle');
+
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const item = toggle.parentElement;
+          const body = item.querySelector('.accordion-body');
+          const icon = toggle.querySelector('.icon');
+
+          if(item.classList.contains('active')) {
+            item.classList.remove('active');
+            icon.textContent = '+';
+          } else {
+            document.querySelectorAll('.accordion-item').forEach(i => {
+              i.classList.remove('active');
+              i.querySelector('.icon').textContent = '+';
+            });
+            item.classList.add('active');
+            icon.textContent = '-';
+          }
+        });
+      });
+    </script>
+  </body>
+  </html>

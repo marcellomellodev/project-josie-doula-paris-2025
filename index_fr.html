@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josie Doula à Paris</title>
+
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="content">
+      <header id="header">
+        <div class="Wrapper-logo">
+          <div class="img-logo">
+            <img src="./assets/header/logo-josie.svg" alt="logo Josie Doula à Paris" class="logo-img">
+          </div>
+          <h1 class="text-logo">Josie Doula</h1>
+        </div>
+        <div class="menu-header">
+          <nav class="menu">
+            <ul class="menu-header-list">
+              <li class="text-menu-list-header"><a href="#About">À propos</a></li>
+              <li class="text-menu-list-header"><a href="#Events">Événements</a></li>
+              <li class="text-menu-list-header"><a href="#Services">Services</a></li>
+              <li class="text-menu-list-header"><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-media-header">
+          <a href="https://www.instagram.com/josiedoulaemparis/" target="_blank" class="social-media-icon">
+            <img src="./assets/header/instagram-icon.svg" alt="icône Instagram">
+          </a>
+          <button id="btn-language" onclick="trocarIdioma()" class="btn-language">
+            <!-- O texto será preenchido via JavaScript -->
+          </button>
+          <div class="language-switch">
+          </div>
+        </div>
+      </header>
+
+      <section id="hero">
+        <div class="wrapper-hero">
+          <div class="content-hero">
+            <div class="bubble-hero">
+              <img src="./assets/hero/josie-header-mensage.png" alt="Josie Doula à Paris" class="bubble-hero-img">
+              <span class="text-hand-hero">Bonjour, je suis Josie Leroux !</span>
+              <img src="./assets/hero/hand-header-mensage.png" alt="image de la main" class="hand-hero-img">
+            </div>
+
+            <div class="content-hero">
+              <h1 class="text-hero-title">
+                Un <span class="text-italic">voyage</span> d'accueil, de sécurité et d'autonomisation
+              </h1>
+              <p class="text-hero">
+                Chaque femme porte en elle l'instinct maternel, mais le chemin n'est pas toujours clair. Entre émotions, attentes et doutes, chaque future maman a besoin de soutien pour vivre cette expérience unique. Vous n'êtes pas seule. Je suis là pour vous guider.
+              </p>
+              <div class="wrapper-btn-hero">
+                <div class="hero-btn-01">
+                  <a href="#contact" class="btn">
+                    <span class="hero-btn-span">
+                      Réservez une rencontre 
+                    </span>
+                    <img src="./assets/hero/whatsapp-icon.svg" alt="icône WhatsApp" class="whatsapp-icon">
+                  </a>
+                </div>
+
+                <div class="hero-btn-02">
+                  <a href="#my-story" class="btn">
+                    <span class="hero-btn-span">Découvrez mon histoire 
+                      <img src="./assets/hero/arrow-hero.svg" alt="Icône flèche vers le bas">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main id="main">
+        <section id="about">
+          <div class="wrapper-title">
+            <h1 class="text-title">
+              Qui suis-je :
+            </h1>
+            <span class="about-title-italic">La guide de ce voyage<span/>
+          </div>
+          <div class="content-about">
+            <div class="wrapper-about">
+              <div class="img">
+                <img src="./assets/section-about/josiedoula-about.jpg" alt="Josie Doula" class="img-about">
+              </div>
+              
+              <div class="list-about-feature">
+                <p class="text-about">
+                  Je m'appelle <span class="text-bold-about">Josie Leroux</span> et ma mission est de marcher à vos côtés dans cette étape si spéciale. En tant que mère, doula et consultante en allaitement, j'ai vécu et compris les défis et les merveilles de la maternité. Mon expérience m'a appris que chaque femme mérite d'être accueillie, informée et respectée dans ses choix.
+                </p>
+                <div class="feature-about">
+                  <img src="./assets/section-about/heart-icon.svg" alt="icône cœur" class="icon-about">
+                  <p class="text-feature">Maman de Sophia, vivant à Paris depuis 9 ans.</p>
+                </div>
+      
+                <div class="feature-about">
+                  <img src="./assets/section-about/heart-icon.svg" alt="icône main" class="icon-about">
+                  <p class="text-feature">Doula depuis 4 ans, Éducatrice Périnatale et Consultante en Allaitement.</p>
+                </div>
+      
+                <div class="feature-about">
+                  <img src="./assets/section-about/heart-icon.svg" alt="icône cœur" class="icon-about">
+                  <p class="text-feature">Spécialisée en Urgences Obstétricales, Premiers Secours pour Bébés et Accompagnement des Migrants.</p>
+                </div>
+      
+                <div class="feature-about">
+                  <img src="./assets/section-about/heart-icon.svg" alt="icône cœur" class="icon-about">
+                  <p class="text-feature">Diplômée de la renommée PARAMANADOULA – Michel Odent.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section id="services">
+          <div class="info-services">
+            <div class="content-info-services">
+              <h1 class="text-title-white">
+                Soutenir, accueillir et informer : c'est la <span class="text-title-white-italic">base</span> de mon <span class="text-title-white-italic">travail</span>.
+              </h1>
+              <p class="text-info-services">
+                Je veux que vous vous sentiez en sécurité pour vivre votre grossesse, accouchement et post-partum avec sérénité et autonomie. Ensemble, nous créerons un plan respectant vos choix et besoins.
+              </p>
+            </div>
+          </div>
+          <div class="content-services">
+            <div class="wrapper-services">
+              <h1 class="text-title">
+                Mes services
+              </h1>
+              <div class="wrapper-card-service">
+                <div class="wrapper-card-service">
+                  <div class="card-service">
+                    <img src="./assets/services/service1.png" alt="image du service" class="icon-services">
+                    <div class="wrapper-text-card">
+                      <div class="title-text-card-service">
+                        <h2 class="subtitle-card-service">Éducation Périnatale</h2>
+                        <img src="./assets/services/baby-icon.svg" alt="">
+                      </div>
+                      <p class="text-card-service">
+                        Préparez-vous à l'accouchement avec connaissance et confiance.
+                      </p>
+                      <a href="#Éducation Périnatale" class="btn-card-service">
+                        <span>En savoir plus</span>
+                        <div>
+                          <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="card-service">
+                    <img src="./assets/services/service2.png" alt="image du service" class="icon-services">
+                    <div class="wrapper-text-card">
+                      <div class="title-text-card-service">
+                        <h2 class="subtitle-card-service">Accompagnement à la Naissance</h2>
+                        <img src="./assets/services/baby-icon.svg" alt="">
+                      </div>
+                      <p class="text-card-service">
+                        Techniques de respiration, massages et soulagement de la douleur.
+                      </p>
+                      <a href="#Accompagnement à la Naissance" class="btn-card-service">
+                        <span>En savoir plus</span>
+                        <div>
+                          <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="card-service">
+                    <img src="./assets/services/service3.png" alt="image du service" class="icon-services">
+                    <div class="wrapper-text-card">
+                      <div class="title-text-card-service">
+                        <h2 class="subtitle-card-service">Post-partum et Allaitement</h2>
+                        <img src="./assets/services/baby-icon.svg" alt="">
+                      </div>
+                      <p class="text-card-service">
+                        Soutien pour les premiers jours avec bébé.
+                      </p>
+                      <a href="#Post-partum et Allaitement" class="btn-card-service">
+                        <span>En savoir plus</span>
+                        <div>
+                          <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="card-service">
+                    <img src="./assets/services/service4.png" alt="image du service" class="icon-services">
+                    <div class="wrapper-text-card">
+                      <div class="title-text-card-service">
+                        <h2 class="subtitle-card-service">Douce Nuit</h2>
+                        <img src="./assets/services/baby-icon.svg" alt="">
+                      </div>
+                      <p class="text-card-service">
+                        Soins nocturnes pour que vous puissiez vous reposer.
+                      </p>
+                      <a href="#Douce Nuit" class="btn-card-service">
+                        <span>En savoir plus</span>
+                        <div>
+                          <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="card-service">
+                    <img src="./assets/services/service3.png" alt="image du service" class="icon-services">
+                    <div class="wrapper-text-card">
+                      <div class="title-text-card-service">
+                        <h2 class="subtitle-card-service">Cercle de Bénédictions</h2>
+                        <img src="./assets/services/baby-icon.svg" alt="">
+                      </div>
+                      <p class="text-card-service">
+                        Un moment spécial de connexion et de célébration.
+                      </p>
+                      <a href="#Cercle de Bénédictions" class="btn-card-service">
+                        <span>En savoir plus</span>
+                        <div>
+                          <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="events">
+          <div class="wrapper-event">
+            <div class="content-event">
+              <div class="wrapper-title">
+                <span class="about-title-italic">Participez et vivez cette expérience !</span>
+              </div>
+              <div class="wrapper-text-event">
+                <p class="text-info-event">
+                  Participez à des événements favorisant l'accueil et l'échange d'expériences entre futures mamans.
+                  Ensemble, nous créerons un espace sécurisé pour partager vos doutes et vécus.
+                </p>
+                <p class="text-info-event">
+                  Les événements sont ouverts à toutes les femmes enceintes, mamans et accompagnants.
+                  Rejoignez ce réseau de soutien !
+                </p>
+                <p class="text-info-event">
+                  Cliquez sur le bouton ci-dessous pour vous inscrire et réserver votre place !
+                </p>
+                <p class="text-info-event">
+                  Les places sont limitées, ne tardez pas !
+                </p>
+              </div>
+              <div class="carousel">
+                <div class="event-buttons">
+                  <button onclick="filtrarEventos('futuros')" class="filter-btn active">Événements à venir</button>
+                  <button onclick="filtrarEventos('realizados')" class="filter-btn">Événements passés</button>
+                </div>
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <figure>
+                        <div class="event-card" data-category="futuros">
+                          <div class="event-badge">Places Limitées</div>
+                          <img src="./assets/cafe-com-doula.jpg" class="event-image">
+                          <div class="event-info">
+                            <h2 class="subtitle-card-event">Cercle de Parole - Maternité à Paris</h2>
+                            <p class="text-card-event">Échanges entre futures mamans brésiliennes en France.</p>
+                            <p class="text-location-event">12/03/2025 | Maison de la Famille</p>
+                            <button type="button" class="event-register-btn" onclick="openModal('Cercle de Parole - Maternité à Paris')">Inscrivez-vous</button>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </li>
+        
+                  <li id="carousel__slide2" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <figure>
+                        <div class="event-card" data-category="futuros">
+                          <img src="./assets/services/service1.png" class="event-image">
+                          <div class="event-info">
+                            <h2 class="subtitle-card-event">Cercle de Bénédictions Collectif</h2>
+                            <p class="text-card-event">Célébration avec méditations et activités.</p>
+                            <p class="text-location-event">25/05/2025 | Jardin du Luxembourg</p>
+                            <button type="button" class="event-register-btn" onclick="openModal('Cercle de Bénédictions Collectif')">Inscrivez-vous</button>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </li>
+        
+                  <li id="carousel__slide3" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <figure>
+                        <div class="event-card" data-category="futuros">
+                          <div class="event-badge">Places Limitées</div>
+                          <img src="./assets/services/service4.png" class="event-image">
+                          <div class="event-info">
+                            <h2 class="subtitle-card-event">Atelier Respiration et Accouchement</h2>
+                            <p class="text-card-event">Pratique corporelle et émotionnelle avec techniques de respiration.</p>
+                            <p class="text-location-event">15/06/2025 | Salle Bien-Être, Paris</p>
+                            <button type="button" class="event-register-btn" onclick="openModal('Atelier Respiration et Accouchement')">Inscrivez-vous</button>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </li>
+        
+                  <!-- Eventos passados -->
+                  <li id="carousel__slide4" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <figure>
+                        <div class="event-card" data-category="realizados">
+                          <img src="./assets/services/service3.png" class="event-image">
+                          <div class="event-info-held">
+                            <h2 class="subtitle-card-event">Cours d'Allaitement</h2>
+                            <p class="text-card-event">Atelier en ligne sur les premiers soins.</p>
+                            <p class="text-location-event">10/02/2024 | En ligne (Zoom)</p>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </li>
+        
+                  <li id="carousel__slide5" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <figure>
+                        <div class="event-card" data-category="realizados">
+                          <img src="./assets/services/service2.png" class="event-image">
+                          <div class="event-info-held">
+                            <h2 class="subtitle-card-event">Conférence "Grossesse Consciente"</h2>
+                            <p class="text-card-event">Informations pratiques et émotionnelles pour futures mamans.</p>
+                            <p class="text-location-event">05/11/2023 | Maison de Quartier, Paris</p>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </li>
+        
+                  <li id="carousel__slide6" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <figure>
+                        <div class="event-card" data-category="realizados">
+                          <img src="./assets/services/service1.png" class="event-image">
+                          <div class="event-info-held">
+                            <h2 class="subtitle-card-event">Café avec Doula</h2>
+                            <p class="text-card-event">Rencontre informelle avec mamans et futures mamans.</p>
+                            <p class="text-location-event">20/09/2023 | Café Douceur, Paris</p>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section id="info-video">
+          <video autoplay muted loop playsinline id="bg-video">
+            <source src="./assets/bg-info-video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+          </video>
+          <div id="content-info-video">
+            <h1 class="text-title">La <span class="text-title-italic">grossesse</span> éveille une infinité de <span class="text-title-italic">sentiments</span> : joie, anxiété, insécurité.</h1>
+            
+            <div class="subtitle-info-video">
+              <p class="text-info-video">
+                L'accouchement peut être un moment de peur et de doutes, et lorsque le bébé arrive, de nouvelles questions surgissent :
+              </p>
+              <span class="text-info-video-italic">
+                "Est-ce que j'allaite correctement ?"
+                <br>
+                "Comment gérer les nuits blanches ?"
+                <br>
+                "Qui peut m'aider ?"
+              </span>
+        
+              <p class="text-info-video">
+                Si vous ressentez cela, sachez que vous n'êtes pas seule. Mon rôle est de transformer vos peurs en connaissances et en autonomie.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <section id="feedbacks">
+          <h1 class="text-title">Témoignages : Histoires de Transformation</h1>
+        
+          <p class="text-feedback">
+            Chaque femme que j'ai accompagnée porte une histoire unique. Voici quelques récits de mamans qui ont vécu ce voyage avec moi et ont trouvé soutien, accueil et sécurité.
+          </p>
+        
+          <div class="wrapper-feedbacks">
+            <div class="card-feedback">
+              <p class="text-card-feedback">
+                "Josie a été essentielle pendant mon accouchement. Sa présence calme et son savoir m'ont apporté la sécurité nécessaire pour vivre ce moment si spécial avec confiance."
+              </p>
+              <div class="wrapper-user-feedback">
+                <div class="img-user-feedback">
+                  <img src="./assets/feedback/feedback1.png" alt="">
+                </div>
+                <div class="user-feedback">
+                  <p class="text-user-feedback">Ana Maria</p>
+                  <span class="text02-user-feedback">maman de Pedro</span>
+                </div>
+              </div>
+            </div>
+        
+            <div class="card-feedback">
+              <p class="text-card-feedback">
+                "Vivre à Paris loin de ma famille n'a pas été facile pendant la grossesse, mais Josie m'a apporté l'accueil dont j'avais besoin. Son expérience avec les immigrantes a fait toute la différence."
+              </p>
+              <div class="wrapper-user-feedback">
+                <div class="img-user-feedback">
+                  <img src="./assets/feedback/feedback2.png" alt="">
+                </div>
+                <div class="user-feedback">
+                  <p class="text-user-feedback">Ana Paula</p>
+                  <span class="text02-user-feedback">maman de Maria</span>
+                </div>
+              </div>
+            </div>
+        
+            <div class="card-feedback">
+              <p class="text-card-feedback">
+                "En tant que jeune maman, j'avais beaucoup de doutes sur l'allaitement. Le conseil de Josie a été essentiel pour allaiter ma fille en toute sérénité."
+              </p>
+              <div class="wrapper-user-feedback">
+                <div class="img-user-feedback">
+                  <img src="./assets/feedback/feedback3.png" alt="">
+                </div>
+                <div class="user-feedback">
+                  <p class="text-user-feedback">Fernanda</p>
+                  <span class="text02-user-feedback">maman de Sofia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> 
+        
+      </main>
+    </div> 
+      
+    <section id="contact">
+      <div class="content-contact">
+        <div class="wrapper-title">
+          <h1 class="text-title">Contactez-moi</h1>
+          <span class="about-title-italic">On en parle ?</span>
+        </div>
+        <div class="content-contact">
+          <div class="modern-contact-container">
+            <div class="modern-contact-image">
+              <img src="./assets/josiedoula-contact.jpg" alt="Josie Doula contact" class="img-contact-modern">
+            </div>
+    
+            <div class="modern-contact-form">
+              <p class="text-contact">
+                Des questions, des suggestions ou envie de planifier une rencontre ? Laissez votre message ci-dessous ou contactez-moi directement via WhatsApp.
+              </p>
+    
+              <form action="https://formsubmit.co/xelomoral@gmail.com" method="POST" class="form-contact">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="nome" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre e-mail" required>
+                <textarea name="mensagem" placeholder="Votre message" rows="4" required></textarea>
+                <button type="submit" class="btn-send">
+                  <span>Envoyer le message</span>
+                  <img src="./assets/hero/whatsapp-icon.svg" alt="Icône WhatsApp" class="whatsapp-icon">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer id="footer">
+      <div class="content-footer">
+        <div class="footer-logo">
+          <img src="./assets/footer/assinatura-josie.svg" alt="logo Josie Doula à Paris" class="logo-img">
+        </div>
+        
+        <div class="wrapper-social-footer">
+          <div class="social-footer">
+            <img src="./assets/footer/Instagram-icon.svg" alt="icône Instagram" class="social-media-icon">
+            <a href="https://www.instagram.com/josiedoulaemparis/" target="_blank" class="text-link-footer">@josiedoulaemparis</a>
+          </div>
+    
+          <div class="social-footer">
+            <img src="./assets/footer/Whatsapp-icon.svg" alt="icône WhatsApp" class="social-media-icon">
+            <a href="https://wa.me/+330750330047" target="_blank" class="text-link-footer">+33 07.50.33.00.47</a>
+          </div>
+    
+          <div class="social-footer">
+            <img src="./assets/footer/email.svg" alt="icône Email" class="social-media-icon">
+            <a href="mailto:josie.doula.paris@gmail.com" target="_blank" class="text-link-footer">josie.doula.paris@gmail.com</a>
+          </div>
+    
+          <div class="company-id">
+            <p>SIRET : 94751513600010</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="copyright">
+      <p class="text-copyright">© 2025 Tous droits réservés.</p>
+      <span class="dev-site">Développé par <a href="https://www.dilevate.com">Dilevate</a></span>
+    </div>
+    
+    <!-- Modal d'inscription -->
+    <div id="modal-overlay" style="display:none">
+      <div id="modal">
+        <button onclick="closeModal()" id="close-modal">×</button>
+        <h2 id="modal-title">Inscription à l'Événement</h2>
+        <form id="form-inscription" action="https://formsubmit.co/xelomoral@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="text" name="nome" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre e-mail" required>
+          <input type="tel" name="telefone" placeholder="Votre téléphone" required>
+          <input type="date" name="data_nascimento" placeholder="Date de naissance" required>
+          <textarea name="mensagem" placeholder="Message (optionnel)"></textarea>
+          <button type="submit">Envoyer l'inscription</button>
+        </form>
+      </div>
+    </div> 
+      
+    <script>
+      /*btn tradução*/
+      document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('btn-language');
+        const currentPage = window.location.pathname;
+
+        if (currentPage.includes('index_fr.html')) {
+        btn.innerHTML = `
+          <img
+          src="https://flagcdn.com/16x12/br.png"
+          srcset="https://flagcdn.com/32x24/br.png 2x,
+            https://flagcdn.com/48x36/br.png 3x"
+          width="100%"
+          alt="Brasil">
+        `;
+        } else {
+        btn.innerHTML = `
+          <img
+          src="https://flagcdn.com/16x12/fr.png"
+          srcset="https://flagcdn.com/32x24/fr.png 2x,
+            https://flagcdn.com/48x36/fr.png 3x"
+          width="100%"
+          alt="France">
+        `;
+        }
+      });
+
+      function trocarIdioma() {
+        const currentPage = window.location.pathname;
+
+        if (currentPage.includes('index_fr.html')) {
+        window.location.href = 'index.html';  // Voltar para Português
+        } else {
+        window.location.href = 'index_fr.html';  // Ir para Francês
+        }
+      }
+
+
+      const slides = document.querySelectorAll('.carousel__slide')
+      const slidesNavigationButtons = document.querySelectorAll('.carousel__navigation-button')
+      const btn_next = document.querySelector('.carousel__next')
+      const btn_prev = document.querySelector('.carousel__prev')
+      const carousel = document.querySelector('.carousel__viewport')
+    
+      let i = 0
+      let visibleSlides = Array.from(slides).filter(s => s.style.display !== 'none')
+      let autoplayInterval = null
+    
+      function scrollToSlideIndex(slideElement) {
+        carousel.scrollTo({
+          left: slideElement.offsetLeft,
+          behavior: "smooth"
+        });
+      }
+    
+      function filtrarEventos(categoria) {
+        const cards = document.querySelectorAll('.event-card');
+        const buttons = document.querySelectorAll('.filter-btn');
+    
+        buttons.forEach(btn => btn.classList.remove('active'));
+        const btnAtivo = Array.from(buttons).find(b => b.textContent.toLowerCase().includes(categoria));
+        if (btnAtivo) btnAtivo.classList.add('active');
+    
+        slides.forEach((slide) => {
+          const card = slide.querySelector('.event-card');
+          if (card && card.getAttribute('data-category') === categoria) {
+            card.classList.remove('hidden');
+            slide.style.display = 'block';
+          } else {
+            if (card) card.classList.add('hidden');
+            slide.style.display = 'none';
+          }
+        });
+    
+        visibleSlides = Array.from(slides).filter(s => s.style.display !== 'none');
+        i = 0;
+        if (visibleSlides.length > 0) {
+          scrollToSlideIndex(visibleSlides[i]);
+        }
+        iniciarAutoplay();
+      }
+    
+      function iniciarAutoplay() {
+        pararAutoplay();
+        autoplayInterval = setInterval(() => {
+          if (visibleSlides.length === 0) return;
+          i = (i + 1) % visibleSlides.length;
+          scrollToSlideIndex(visibleSlides[i]);
+        }, 2000); // Reduzido para suavidade
+      }
+    
+      function pararAutoplay() {
+        clearInterval(autoplayInterval);
+      }
+    
+      document.addEventListener('DOMContentLoaded', () => {
+        filtrarEventos('futuros');
+        iniciarAutoplay();
+      });
+    
+      btn_next.onclick = () => {
+        if (visibleSlides.length === 0) return;
+        i = (i + 1) % visibleSlides.length;
+        scrollToSlideIndex(visibleSlides[i]);
+      }
+    
+      btn_prev.onclick = () => {
+        if (visibleSlides.length === 0) return;
+        i = (i - 1 + visibleSlides.length) % visibleSlides.length;
+        scrollToSlideIndex(visibleSlides[i]);
+      }
+    
+      carousel.addEventListener('mouseenter', pararAutoplay);
+      carousel.addEventListener('mouseleave', iniciarAutoplay);
+    
+      function openModal(title) {
+        document.getElementById('modal-title').innerText = 'Inscrição: ' + title;
+        document.getElementById('modal-overlay').style.display = 'flex';
+      }
+    
+      function closeModal() {
+        document.getElementById('modal-overlay').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
+      
+              

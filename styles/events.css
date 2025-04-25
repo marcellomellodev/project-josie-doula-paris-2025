@@ -277,7 +277,7 @@ ol {
 }
 
 .active {
-  background-color: darkgray;
+  background-color: var(--bg-03);
 }
 
 .event-buttons {

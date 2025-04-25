@@ -24,9 +24,10 @@
       <div class="menu-header">
         <nav class="menu">
           <ul class="menu-header-list ">
-            <li class="text-menu-list-header"><a href="#about">À propos</a></li>
-            <li class="text-menu-list-header"><a href="#events">Événements</a></li>
-            <li class="text-menu-list-header"><a href="#contact">Contact</a></li>
+            <li class="text-menu-list-header"><a href="#about">Sobre</a></li>
+            <li class="text-menu-list-header"><a href="#events">Eventos</a></li>
+            <li class="text-menu-list-header"><a href="./service.html" class="btn">Serviços</a></li>
+            <li class="text-menu-list-header"><a href="#contact">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -34,13 +35,21 @@
         <a href="https://www.instagram.com/josiedoulaemparis/" target="_blank" class="social-media-icon">
           <img src="./assets/header/instagram-icon.svg" alt="icone Instagram" >
         </a>
+        <button id="btn-language" onclick="trocarIdioma()" class="btn-language">
+          <img
+            src="https://flagcdn.com/16x12/fr.png"
+            srcset="https://flagcdn.com/32x24/fr.png 2x,
+              https://flagcdn.com/48x36/fr.png 3x"
+            width="16"
+            height="12"
+            alt="France">
+        </button>
       </div>
     </header>
 
     <section id="hero">
       <div class="wrapper-hero">
         <div class="content-hero">
-
           <div class="bubble-hero">
             <img src="./assets/hero/josie-header-mensage.png" alt="Josie Doula em Paris" class="bubble-hero-img">
             <span class="text-hand-hero">Oi, eu sou a Josie Leroux!</span>
@@ -150,7 +159,7 @@
                   <p class="text-card-service">
                     Prepare-se para o parto com conhecimento e confiança.
                   </p>
-                  <a href="#contact" class="btn-card-service">
+                  <a href="#Educação Perinatal" class="btn-card-service">
                     <span>Saiba mais</span>
                     <div>
                       <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
@@ -169,7 +178,7 @@
                   <p class="text-card-service">
                     Técnicas de respiração, massagens e alívio da dor
                   </p>
-                  <a href="#contact" class="btn-card-service">
+                  <a href="#Acompanhamento no Parto" class="btn-card-service">
                     <span>Saiba mais</span>
                     <div>
                       <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
@@ -188,7 +197,7 @@
                   <p class="text-card-service">
                     Suporte para os primeiros dias com o bebê
                   </p>
-                  <a href="#contact" class="btn-card-service">
+                  <a href="#Pós-parto e Amamentação" class="btn-card-service">
                     <span>Saiba mais</span>
                     <div>
                       <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
@@ -207,7 +216,7 @@
                   <p class="text-card-service">
                     Cuidado noturno para que você possa descansar
                   </p>
-                  <a href="#contact" class="btn-card-service">
+                  <a href="#Doce Noite" class="btn-card-service">
                     <span>Saiba mais</span>
                     <div>
                       <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
@@ -226,7 +235,7 @@
                   <p class="text-card-service">
                     Um momento especial de conexão e celebração
                   </p>
-                  <a href="#contact" class="btn-card-service">
+                  <a href="#Chá de Bençãos" class="btn-card-service">
                     <span>Saiba mais</span>
                     <div>
                       <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
@@ -245,7 +254,7 @@
                   <p class="text-card-service">
                     Cuidado noturno para que você possa descansar
                   </p>
-                  <a href="#contact" class="btn-card-service">
+                  <a href="#Doce Noite" class="btn-card-service">
                     <span>Saiba mais</span>
                     <div>
                       <img class="img-btn-card-service" src="./assets/hero/whatsapp-icon.svg" alt="">
@@ -613,7 +622,7 @@
 
   <div class="copyright">
     <p class="text-copyright">© 2025 Todos os direitos reservados.</p>
-    <span class="dev-site">Desenvolvido por <a href="https://www.dilevete.com">Dilevate</a></span>
+    <span class="dev-site">Desenvolvido por <a href="https://www.dilevate.com">Dilevate</a></span>
   </div>
 
   <!-- Modal de inscrição -->
@@ -634,6 +643,45 @@
   </div>
 
   <script>
+    /*btn tradução*/
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('btn-language');
+      const currentPage = window.location.pathname;
+
+      if (currentPage.includes('index_fr.html')) {
+      btn.innerHTML = `
+        <img
+        src="https://flagcdn.com/16x12/br.png"
+        srcset="https://flagcdn.com/32x24/br.png 2x,
+          https://flagcdn.com/48x36/br.png 3x"
+        width="16"
+        height="12"
+        alt="Brasil">
+      `;
+      } else {
+      btn.innerHTML = `
+        <img
+        src="https://flagcdn.com/16x12/fr.png"
+        srcset="https://flagcdn.com/32x24/fr.png 2x,
+          https://flagcdn.com/48x36/fr.png 3x"
+        width="16"
+        height="12"
+        alt="France">
+      `;
+      }
+    });
+
+    function trocarIdioma() {
+      const currentPage = window.location.pathname;
+
+      if (currentPage.includes('index_fr.html')) {
+      window.location.href = 'index.html';  // Voltar para Português
+      } else {
+      window.location.href = 'index_fr.html';  // Ir para Francês
+      }
+    }
+
+
     const slides = document.querySelectorAll('.carousel__slide')
     const slidesNavigationButtons = document.querySelectorAll('.carousel__navigation-button')
     const btn_next = document.querySelector('.carousel__next')
